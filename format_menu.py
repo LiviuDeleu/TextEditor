@@ -118,5 +118,5 @@ def main(root, text, menubar):
 
     root.config(menu=menubar)
     
-    if __name__ == "__main":
+if __name__ == "__main":
     print("Please run 'main.py'")

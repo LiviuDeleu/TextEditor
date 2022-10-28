@@ -6,7 +6,7 @@ from tkinter.messagebox import *
 # creating File
 class File():
 
-def newFile(self):
+    def newFile(self):
         self.filename = "Untitled"
         self.text.delete(0.0, END)
 
@@ -44,7 +44,7 @@ def newFile(self):
         self.text = text
         self.root = root
 
-    def main(root, text, menubar):
+def main(root, text, menubar):
     filemenu = Menu(menubar)
     objFile = File(text, root)
     filemenu.add_command(label="New", command=objFile.newFile)
